@@ -233,6 +233,17 @@ else
 end
 
 
+########## WebSocket++ ##########
+
+def websocketpp_cflags
+  '-Isrc/cxx_supportlib/vendor-copy/websocketpp'
+end
+
+def websocketpp_libs
+  nil
+end
+
+
 ########## Shared definitions ##########
 # Shared definition files should be in source control so that they don't
 # have to be built by users. Users may not have write access to the source
